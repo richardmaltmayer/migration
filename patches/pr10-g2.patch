@@ -1,0 +1,14 @@
+From dc5f3bf16c1777e3b8ab84307a2eebfeb199fd5c Mon Sep 17 00:00:00 2001
+From: Richard Altmayer <richard.altmayer@asaas.com.br>
+Date: Wed, 22 Oct 2025 13:55:26 -0300
+Subject: [PATCH] Classe movida
+
+---
+ src/main/groovy/com/asaas/{config => util}/ConfigUtil.groovy | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ rename src/main/groovy/com/asaas/{config => util}/ConfigUtil.groovy (100%)
+
+diff --git a/src/main/groovy/com/asaas/config/ConfigUtil.groovy b/src/main/groovy/com/asaas/util/ConfigUtil.groovy
+similarity index 100%
+rename from src/main/groovy/com/asaas/config/ConfigUtil.groovy
+rename to src/main/groovy/com/asaas/util/ConfigUtil.groovy

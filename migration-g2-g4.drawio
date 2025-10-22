@@ -1,0 +1,97 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36" version="28.2.7">
+  <diagram name="Página-1" id="WPkeWiqIcaa2pFpZ0WTi">
+    <mxGraphModel dx="1426" dy="749" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="BvpV5hKN4u9V3-yNzqz1-3" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="BvpV5hKN4u9V3-yNzqz1-1" target="BvpV5hKN4u9V3-yNzqz1-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="BvpV5hKN4u9V3-yNzqz1-1" value="PR mergeado&lt;div&gt;para a&amp;nbsp;&lt;/div&gt;&lt;div&gt;release&amp;nbsp;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;G2&lt;/span&gt;&lt;/div&gt;" style="shape=step;perimeter=stepPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="54" y="190" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="BvpV5hKN4u9V3-yNzqz1-6" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="BvpV5hKN4u9V3-yNzqz1-2" target="BvpV5hKN4u9V3-yNzqz1-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="BvpV5hKN4u9V3-yNzqz1-2" value="Geração do&amp;nbsp;&lt;div&gt;.patch do PR&lt;/div&gt;" style="shape=step;perimeter=stepPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="254" y="190" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="BvpV5hKN4u9V3-yNzqz1-8" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="BvpV5hKN4u9V3-yNzqz1-5" target="BvpV5hKN4u9V3-yNzqz1-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="BvpV5hKN4u9V3-yNzqz1-5" value="&lt;div&gt;Processamento&lt;div&gt;do .patch&lt;/div&gt;&lt;/div&gt;" style="shape=step;perimeter=stepPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="454" y="190" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="BvpV5hKN4u9V3-yNzqz1-10" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="BvpV5hKN4u9V3-yNzqz1-7" target="BvpV5hKN4u9V3-yNzqz1-9">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="714" y="320" />
+              <mxPoint x="114" y="320" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="BvpV5hKN4u9V3-yNzqz1-7" value="Cria nova&lt;div&gt;&amp;nbsp;branch&amp;nbsp;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;G4&lt;/span&gt;&lt;/div&gt;" style="shape=step;perimeter=stepPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="654" y="190" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="BvpV5hKN4u9V3-yNzqz1-12" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="BvpV5hKN4u9V3-yNzqz1-9" target="BvpV5hKN4u9V3-yNzqz1-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="BvpV5hKN4u9V3-yNzqz1-9" value="Aplica&amp;nbsp;&lt;div&gt;.patch&lt;/div&gt;" style="shape=step;perimeter=stepPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="54" y="360" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="BvpV5hKN4u9V3-yNzqz1-14" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="BvpV5hKN4u9V3-yNzqz1-11" target="BvpV5hKN4u9V3-yNzqz1-13">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="BvpV5hKN4u9V3-yNzqz1-11" value="Aplica&amp;nbsp;&lt;div&gt;transformações&lt;/div&gt;&lt;div&gt;via script&lt;/div&gt;" style="shape=step;perimeter=stepPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="254" y="360" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="BvpV5hKN4u9V3-yNzqz1-16" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="BvpV5hKN4u9V3-yNzqz1-13" target="BvpV5hKN4u9V3-yNzqz1-15">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="720" y="400" />
+              <mxPoint x="720" y="600" />
+              <mxPoint x="110" y="600" />
+              <mxPoint x="110" y="680" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="BvpV5hKN4u9V3-yNzqz1-13" value="Commit das alterações" style="shape=step;perimeter=stepPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="454" y="360" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="BvpV5hKN4u9V3-yNzqz1-18" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="BvpV5hKN4u9V3-yNzqz1-15" target="BvpV5hKN4u9V3-yNzqz1-17">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="444" y="680" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="BvpV5hKN4u9V3-yNzqz1-15" value="Abre PR G4" style="shape=step;perimeter=stepPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="54" y="640" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="BvpV5hKN4u9V3-yNzqz1-17" value="Merge&amp;nbsp;&lt;div&gt;automático&lt;/div&gt;&lt;div&gt;G4&lt;/div&gt;" style="shape=step;perimeter=stepPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="258" y="640" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="BvpV5hKN4u9V3-yNzqz1-20" value="Necessária&amp;nbsp;&lt;div&gt;adequação&amp;nbsp;&lt;div&gt;do caminho&amp;nbsp;&lt;/div&gt;&lt;div&gt;dos arquivos&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;/div&gt;" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.annotation_2;align=left;labelPosition=right;pointerEvents=1;" vertex="1" parent="1">
+          <mxGeometry x="430" y="80" width="50" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="BvpV5hKN4u9V3-yNzqz1-21" value="Sempre que&amp;nbsp;&lt;div&gt;possível&lt;/div&gt;" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.annotation_2;align=left;labelPosition=right;pointerEvents=1;" vertex="1" parent="1">
+          <mxGeometry x="230" y="730" width="50" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="BvpV5hKN4u9V3-yNzqz1-22" value="https://github.com/&lt;div&gt;asaasdev/asaas/&lt;/div&gt;&lt;div&gt;pull/49227.patch&lt;/div&gt;" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.annotation_2;align=left;labelPosition=right;pointerEvents=1;" vertex="1" parent="1">
+          <mxGeometry x="230" y="80" width="50" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="BvpV5hKN4u9V3-yNzqz1-23" value="Script customizado&amp;nbsp;&lt;div&gt;(apenas arquivos&amp;nbsp;&lt;/div&gt;&lt;div&gt;envolvidos no PR).&lt;/div&gt;" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.annotation_2;align=left;labelPosition=right;pointerEvents=1;" vertex="1" parent="1">
+          <mxGeometry x="230" y="450" width="50" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="BvpV5hKN4u9V3-yNzqz1-24" value="Nomenclatura&amp;nbsp;&lt;div&gt;padronizada&lt;/div&gt;" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.annotation_2;align=left;labelPosition=right;pointerEvents=1;" vertex="1" parent="1">
+          <mxGeometry x="630" y="80" width="50" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="BvpV5hKN4u9V3-yNzqz1-25" value="Há comando&amp;nbsp;&lt;div&gt;que indica se&amp;nbsp;&lt;/div&gt;&lt;div&gt;o .patch será&amp;nbsp;&lt;/div&gt;&lt;div&gt;aplicado com&amp;nbsp;&lt;/div&gt;&lt;div&gt;sucesso.&lt;/div&gt;" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.annotation_2;align=left;labelPosition=right;pointerEvents=1;" vertex="1" parent="1">
+          <mxGeometry x="30" y="450" width="50" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="BvpV5hKN4u9V3-yNzqz1-26" value="Faz referência&amp;nbsp;&lt;div&gt;ao PR original&lt;/div&gt;" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.annotation_2;align=left;labelPosition=right;pointerEvents=1;" vertex="1" parent="1">
+          <mxGeometry x="30" y="730" width="50" height="100" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

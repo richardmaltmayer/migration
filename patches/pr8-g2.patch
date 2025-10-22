@@ -1,0 +1,21 @@
+From 02348181b0e112a90dd7f47dbb0f2939e1837cc6 Mon Sep 17 00:00:00 2001
+From: richardmaltmayer <92823796+richardmaltmayer@users.noreply.github.com>
+Date: Wed, 22 Oct 2025 13:03:48 -0300
+Subject: [PATCH] Revert "Teste 3"
+
+---
+ grails-app/init/g4/BootStrap.groovy | 1 -
+ 1 file changed, 1 deletion(-)
+
+diff --git a/grails-app/init/g4/BootStrap.groovy b/grails-app/init/g4/BootStrap.groovy
+index a1fb957..00c9b47 100644
+--- a/grails-app/init/g4/BootStrap.groovy
++++ b/grails-app/init/g4/BootStrap.groovy
+@@ -3,7 +3,6 @@ class BootStrap {
+     def init = { servletContext ->
+         println "teste 1"
+         println "teste 2"
+-        println "teste 3"
+     }
+     def destroy = {
+     }

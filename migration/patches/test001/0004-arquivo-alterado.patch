@@ -1,0 +1,23 @@
+From 459f7efee373b770ff941603c7ad87a9661f10e3 Mon Sep 17 00:00:00 2001
+From: richardmaltmayer <92823796+richardmaltmayer@users.noreply.github.com>
+Date: Mon, 20 Oct 2025 11:24:20 -0300
+Subject: [PATCH 4/7] arquivo alterado
+
+---
+ grails-app/i18n/messages_pt_BR.properties | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/grails-app/i18n/messages_pt_BR.properties b/grails-app/i18n/messages_pt_BR.properties
+index 0c368f2..daef109 100644
+--- a/grails-app/i18n/messages_pt_BR.properties
++++ b/grails-app/i18n/messages_pt_BR.properties
+@@ -1,5 +1,5 @@
+ #
+-# Translated by Lucas Teixeira - lucastex@gmail.com
++# Translated by Lucas Teixeira - lucastex@gmail.com xx
+ #
+ 
+ default.doesnt.match.message=O campo [{0}] da classe [{1}] com o valor [{2}] não atende ao padrão definido [{3}]
+-- 
+2.34.1
+

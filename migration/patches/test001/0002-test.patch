@@ -1,0 +1,25 @@
+From 88e7fe4b3afd0cb8719466602c209840c6e6fd6c Mon Sep 17 00:00:00 2001
+From: Richard Altmayer <richard.altmayer@asaas.com.br>
+Date: Mon, 20 Oct 2025 11:15:15 -0300
+Subject: [PATCH 2/7] test
+
+---
+ grails-app/views/error.gsp | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/grails-app/views/error.gsp b/grails-app/views/error.gsp
+index 95e11ed..0ffb3e8 100644
+--- a/grails-app/views/error.gsp
++++ b/grails-app/views/error.gsp
+@@ -11,7 +11,7 @@
+ 		</g:if>
+ 		<g:else>
+ 			<ul class="errors">
+-				<li>An error has occurred</li>
++				<li>An error has occurred .</li>
+ 			</ul>
+ 		</g:else>
+ 	</body>
+-- 
+2.34.1
+

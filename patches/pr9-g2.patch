@@ -1,0 +1,24 @@
+From eeb05469a88e887ef21e06484939ea2b2d344d47 Mon Sep 17 00:00:00 2001
+From: Richard Altmayer <richard.altmayer@asaas.com.br>
+Date: Wed, 22 Oct 2025 13:50:45 -0300
+Subject: [PATCH] Nova classe ConfigUtil
+
+---
+ src/main/groovy/com/asaas/config/ConfigUtil.groovy | 7 +++++++
+ 1 file changed, 7 insertions(+)
+ create mode 100644 src/main/groovy/com/asaas/config/ConfigUtil.groovy
+
+diff --git a/src/main/groovy/com/asaas/config/ConfigUtil.groovy b/src/main/groovy/com/asaas/config/ConfigUtil.groovy
+new file mode 100644
+index 0000000..e8feb81
+--- /dev/null
++++ b/src/main/groovy/com/asaas/config/ConfigUtil.groovy
+@@ -0,0 +1,7 @@
++package com.asaas.config
++
++class ConfigUtil {
++
++    private String configName;
++
++}
+\ No newline at end of file

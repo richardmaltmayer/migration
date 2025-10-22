@@ -1,0 +1,21 @@
+From 681f0e65af88a3c562cb4d4ce78e9ea80b8d2da3 Mon Sep 17 00:00:00 2001
+From: Richard Altmayer <richard.altmayer@asaas.com.br>
+Date: Wed, 22 Oct 2025 11:04:17 -0300
+Subject: [PATCH] teste 02
+
+---
+ grails-app/init/g4/BootStrap.groovy | 1 +
+ 1 file changed, 1 insertion(+)
+
+diff --git a/grails-app/init/g4/BootStrap.groovy b/grails-app/init/g4/BootStrap.groovy
+index 55b8e4a..00c9b47 100644
+--- a/grails-app/init/g4/BootStrap.groovy
++++ b/grails-app/init/g4/BootStrap.groovy
+@@ -2,6 +2,7 @@ class BootStrap {
+ 
+     def init = { servletContext ->
+         println "teste 1"
++        println "teste 2"
+     }
+     def destroy = {
+     }

@@ -1,0 +1,25 @@
+From 37fa68883601d2e7fee3184fc74ac16c821b9e2f Mon Sep 17 00:00:00 2001
+From: Richard Altmayer <richard.altmayer@asaas.com.br>
+Date: Tue, 21 Oct 2025 14:38:13 -0300
+Subject: [PATCH 7/7] nova chave
+
+---
+ grails-app/i18n/messages_pt_BR.properties | 2 ++
+ 1 file changed, 2 insertions(+)
+
+diff --git a/grails-app/i18n/messages_pt_BR.properties b/grails-app/i18n/messages_pt_BR.properties
+index b724468..019db10 100644
+--- a/grails-app/i18n/messages_pt_BR.properties
++++ b/grails-app/i18n/messages_pt_BR.properties
+@@ -2,6 +2,8 @@
+ # Translated by Lucas Teixeira - lucastex@gmail.com xxaabb
+ #
+ 
++new.key=value
++
+ default.doesnt.match.message=O campo [{0}] da classe [{1}] com o valor [{2}] não atende ao padrão definido [{3}]
+ default.invalid.url.message=O campo [{0}] da classe [{1}] com o valor [{2}] não é uma URL válida
+ default.invalid.creditCard.message=O campo [{0}] da classe [{1}] com o valor [{2}] não é um número válido de cartão de crédito
+-- 
+2.34.1
+
