@@ -220,7 +220,6 @@ echo ">> 3"
 echo ">> 4"
 copy_files_if_necessary
 echo ">> 5"
-exit 1;
 apply_patch
 echo ">> 6"
 commit_grails4 "migration(adapt): adequações automáticas para PR #${PR_NUMBER} (Grails 2 → Grails 4)"
