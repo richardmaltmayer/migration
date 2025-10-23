@@ -4,14 +4,14 @@ Date: Wed, 22 Oct 2025 14:51:41 -0300
 Subject: [PATCH] Classe removida
 
 ---
- src/main/groovy/com/asaas/util/AsaasConfigUtil.groovy | 7 -------
+ src/groovy/com/asaas/util/AsaasConfigUtil.groovy | 7 -------
  1 file changed, 7 deletions(-)
- delete mode 100644 src/main/groovy/com/asaas/util/AsaasConfigUtil.groovy
+ delete mode 100644 src/groovy/com/asaas/util/AsaasConfigUtil.groovy
 
-diff --git a/src/main/groovy/com/asaas/util/AsaasConfigUtil.groovy b/src/main/groovy/com/asaas/util/AsaasConfigUtil.groovy
+diff --git a/src/groovy/com/asaas/util/AsaasConfigUtil.groovy b/src/groovy/com/asaas/util/AsaasConfigUtil.groovy
 deleted file mode 100644
 index 81b0571..0000000
---- a/src/main/groovy/com/asaas/util/AsaasConfigUtil.groovy
+--- a/src/groovy/com/asaas/util/AsaasConfigUtil.groovy
 +++ /dev/null
 @@ -1,7 +0,0 @@
 -package com.asaas.config

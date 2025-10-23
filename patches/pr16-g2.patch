@@ -1,0 +1,21 @@
+From 1ffa5ab231c573dbcaa4c6934ab36afc0faa43b8 Mon Sep 17 00:00:00 2001
+From: Richard Altmayer <richard.altmayer@asaas.com.br>
+Date: Thu, 23 Oct 2025 17:12:54 -0300
+Subject: [PATCH] teste de sobrescrita
+
+---
+ grails-app/controllers/com/asaas/interceptor/CustomInterceptor.groovy | 1 +
+ 1 file changed, 1 insertion(+)
+
+diff --git a/grails-app/controllers/com/asaas/interceptor/CustomInterceptor.groovy b/grails-app/controllers/com/asaas/interceptor/CustomInterceptor.groovy
+index 37288e2..e256532 100644
+--- a/grails-app/controllers/com/asaas/interceptor/CustomInterceptor.groovy
++++ b/grails-app/controllers/com/asaas/interceptor/CustomInterceptor.groovy
+@@ -6,6 +6,7 @@ class CustomFilters {
+         all(controller: 'custom', action: '*') {
+             before = {
+                 println controllerName + " / " + actionName
++                println "teste de sobrescrita"
+                 return true
+             }
+         }

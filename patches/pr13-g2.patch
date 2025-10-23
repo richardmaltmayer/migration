@@ -1,0 +1,29 @@
+From a8bb32bc0d3c5964370d91bcdf1c6303709b8d0b Mon Sep 17 00:00:00 2001
+From: Richard Altmayer <richard.altmayer@asaas.com.br>
+Date: Thu, 23 Oct 2025 15:04:32 -0300
+Subject: [PATCH] Add filter
+
+---
+ grails-app/controllers/com/asaas/interceptor/TestInterceptor.groovy | 12 ++++++++++++
+ 1 file changed, 12 insertions(+)
+ create mode 100644 grails-app/controllers/com/asaas/interceptor/TestInterceptor.groovy
+
+diff --git a/grails-app/controllers/com/asaas/interceptor/TestInterceptor.groovy b/grails-app/controllers/com/asaas/interceptor/TestInterceptor.groovy
+new file mode 100644
+index 0000000..e139bd6
+--- /dev/null
++++ b/grails-app/controllers/com/asaas/interceptor/TestInterceptor.groovy
+@@ -0,0 +1,12 @@
++package web
++
++class TestFilters {
++
++    def filters = {
++        all(controller: '*', action: '*') {
++            before = {
++                return true
++            }
++        }
++    }
++}
+\ No newline at end of file

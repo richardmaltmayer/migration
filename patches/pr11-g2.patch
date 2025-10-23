@@ -6,15 +6,15 @@ Subject: [PATCH] Classe renomeada
 ---
  .../asaas/util/{ConfigUtil.groovy => AsaasConfigUtil.groovy}    | 2 +-
  1 file changed, 1 insertion(+), 1 deletion(-)
- rename src/main/groovy/com/asaas/util/{ConfigUtil.groovy => AsaasConfigUtil.groovy} (71%)
+ rename src/groovy/com/asaas/util/{ConfigUtil.groovy => AsaasConfigUtil.groovy} (71%)
 
-diff --git a/src/main/groovy/com/asaas/util/ConfigUtil.groovy b/src/main/groovy/com/asaas/util/AsaasConfigUtil.groovy
+diff --git a/src/groovy/com/asaas/util/ConfigUtil.groovy b/src/groovy/com/asaas/util/AsaasConfigUtil.groovy
 similarity index 71%
-rename from src/main/groovy/com/asaas/util/ConfigUtil.groovy
-rename to src/main/groovy/com/asaas/util/AsaasConfigUtil.groovy
+rename from src/groovy/com/asaas/util/ConfigUtil.groovy
+rename to src/groovy/com/asaas/util/AsaasConfigUtil.groovy
 index e8feb81..81b0571 100644
---- a/src/main/groovy/com/asaas/util/ConfigUtil.groovy
-+++ b/src/main/groovy/com/asaas/util/AsaasConfigUtil.groovy
+--- a/src/groovy/com/asaas/util/ConfigUtil.groovy
++++ b/src/groovy/com/asaas/util/AsaasConfigUtil.groovy
 @@ -1,6 +1,6 @@
  package com.asaas.config
  
