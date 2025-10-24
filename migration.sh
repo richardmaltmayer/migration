@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Número do PR que você quer migrar
-PR_NUMBER=19
+PR_NUMBER=22
 
 # Caminho do projeto do script de transformação de artefatos
 SCRIPT_PATH="/home/richard-almayer/Documentos/dev/projects/asaas-core-grails-migrator"
@@ -13,9 +13,21 @@ PATCH_FILE="/home/richard-almayer/Documentos/dev/pocs/migration/patches/pr${PR_N
 REPO_G2="https://github.com/richardmaltmayer/g2"
 REPO_G4="https://github.com/richardmaltmayer/g4"
 
+# Diretórios do projeto
+PROJECT_G2=~/Documentos/dev/pocs/migration/g2
+PROJECT_G4=~/Documentos/dev/pocs/migration/g4
+
 # Setup
 function setup() {
   export GH_TOKEN=$(<secrets.txt)
+
+  cd $PROJECT_G2
+  git checkout main
+  git pull
+
+  cd $PROJECT_G4
+  git checkout main
+  git pull
 
   dotnet build $SCRIPT_PATH
 }
@@ -119,26 +131,29 @@ function rename_patch_files_if_necessary() {
 
 # Aplicar o patch com preservação de autor/data/mensagem
 function apply_patch() {
+  cd $PROJECT_G4
+
+  git checkout $BRANCH_NAME
+
   git am --abort
 
   git am --3way --whitespace=fix "$PATCH_FILE"
+  git add -A 
+  git commit -m "Patch aplicado"
   git push -u origin $BRANCH_NAME
 
   echo "Patch Aplicado"
 }
 
 function copy_files_if_necessary() {
-  cd ~/Documentos/dev/pocs/migration/g2
+  cd $PROJECT_G2
   git checkout main
   git pull
 
-  cat ~/Documentos/dev/pocs/migration/g2/grails-app/conf/web/CustomFilters.groovy
+  # Processo fixo para um Filter/Interceptor
+  cat $PROJECT_G2/grails-app/conf/web/CustomFilters.groovy > $PROJECT_G4/grails-app/controllers/com/asaas/interceptor/CustomInterceptor.groovy
 
-  cat ~/Documentos/dev/pocs/migration/g2/grails-app/conf/web/CustomFilters.groovy > ~/Documentos/dev/pocs/migration/g4/grails-app/controllers/com/asaas/interceptor/CustomInterceptor.groovy
-
-  cat ~/Documentos/dev/pocs/migration/g4/grails-app/controllers/com/asaas/interceptor/CustomInterceptor.groovy
-
-  cd ~/Documentos/dev/pocs/migration/g4
+  cd $PROJECT_G4
 
   git add -A 
   git commit -m "Refaz arquivo com base no Filters"
@@ -149,7 +164,7 @@ function copy_files_if_necessary() {
 
 # Criar uma branch no repositório destino (Grails 4)
 function create_grails4_branch() {
-  cd ~/Documentos/dev/pocs/migration/g4
+  cd $PROJECT_G4
 
   git fetch origin
   git fetch g2
@@ -192,17 +207,17 @@ function create_grails4_pr() {
 
 # Realizar commit das alterações de migração
 function commit_grails4() {
-  cd ~/Documentos/dev/pocs/migration/g4
+  cd $PROJECT_G4
 
   git add -A
-
   git commit -m "$1"
-
   git push origin "$BRANCH_NAME"
 }
 
 # 8. Merge automático do PR
 function approve_merge() {
+  cd $PROJECT_G4
+
   gh pr merge "$BRANCH_NAME" \
     --merge \
     --auto \
@@ -216,7 +231,7 @@ get_patch_pr
 echo ">> 2"
 rename_patch_files_if_necessary
 echo ">> 3"
-#create_grails4_branch
+create_grails4_branch
 echo ">> 4"
 copy_files_if_necessary
 echo ">> 5"
@@ -230,7 +245,7 @@ execute_migration
 echo ">> 9"
 commit_grails4 "Transformações via script"
 echo ">> 10"
-approve_merge
-echo ">> 11"
+#approve_merge
+#echo ">> 11"
 
 
