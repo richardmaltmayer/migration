@@ -1,0 +1,22 @@
+From 2ba063c5e7b4de25036e7e3cb9b8f699099a574e Mon Sep 17 00:00:00 2001
+From: Richard Altmayer <richard.altmayer@asaas.com.br>
+Date: Fri, 24 Oct 2025 09:04:08 -0300
+Subject: [PATCH] teste final
+
+---
+ grails-app/controllers/com/asaas/interceptor/CustomInterceptor.groovy | 2 ++
+ 1 file changed, 2 insertions(+)
+
+diff --git a/grails-app/controllers/com/asaas/interceptor/CustomInterceptor.groovy b/grails-app/controllers/com/asaas/interceptor/CustomInterceptor.groovy
+index f3ff2ed..35bbe88 100644
+--- a/grails-app/controllers/com/asaas/interceptor/CustomInterceptor.groovy
++++ b/grails-app/controllers/com/asaas/interceptor/CustomInterceptor.groovy
+@@ -9,6 +9,8 @@ class CustomFilters {
+                 println "teste de sobrescrita 17"
+                 Long customerId = 10L
+                 Long customerAccountId = 900L + 100L + 10L
++
++                println "teste final ?"
+                 
+                 return true
+             }

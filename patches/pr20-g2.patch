@@ -1,0 +1,22 @@
+From 8f0d63caa3d9f3c4a84096929a3167a6f233707a Mon Sep 17 00:00:00 2001
+From: Richard Altmayer <richard.altmayer@asaas.com.br>
+Date: Fri, 24 Oct 2025 08:24:55 -0300
+Subject: [PATCH] Sum
+
+---
+ grails-app/controllers/com/asaas/interceptor/CustomInterceptor.groovy | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/grails-app/controllers/com/asaas/interceptor/CustomInterceptor.groovy b/grails-app/controllers/com/asaas/interceptor/CustomInterceptor.groovy
+index 9030571..2c4a056 100644
+--- a/grails-app/controllers/com/asaas/interceptor/CustomInterceptor.groovy
++++ b/grails-app/controllers/com/asaas/interceptor/CustomInterceptor.groovy
+@@ -8,7 +8,7 @@ class CustomFilters {
+                 println controllerName + " / " + actionName
+                 println "teste de sobrescrita 17"
+                 Long customerId = 10L
+-                Long customerAccountId = 900L
++                Long customerAccountId = 900L + 100L
+                 
+                 return true
+             }
